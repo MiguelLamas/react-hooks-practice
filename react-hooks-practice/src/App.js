@@ -1,5 +1,4 @@
 import "./App.css";
-import Axios from "axios";
 import EffectTutorial from "./UseEffect/EffectTutorial";
 import ReducerTutorial from "./UseReducer/ReducerTutorial";
 import StateTutorial from "./UseState/StateTutorial";
@@ -12,14 +11,14 @@ import CallBackTutorial from "./UseCallback/CallbackTutorial";
 function App() {
   return (
     <div className="App">
-      {/* <StateTutorial />
-      <EffectTutorial /> */}
+      <StateTutorial />
+      <EffectTutorial />
       <ReducerTutorial />
-      {/* <ContextTutorial />
-      <ImperativeHandle /> */}
-      {/* <RefTutorial />
+      <ContextTutorial />
+      <ImperativeHandle />
+      <RefTutorial />
       <MemoTutorial />
-      <CallBackTutorial /> */}
+      <CallBackTutorial />
     </div>
   );
 }
