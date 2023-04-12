@@ -2,12 +2,12 @@
 
 ## Understanding and practicing all 9 core hooks from React:
 
-- UseState
-- UseReducer
-- UseEffect
-- UseRef
-- UseLayoutEffect
-- UseImperativeHandle
-- UseContext
-- UseMemo
-- UseCallback
+- useState
+- useReducer
+- useEffect
+- useRef
+- useLayoutEffect
+- useImperativeHandle
+- useContext
+- useMemo
+- useCallback
