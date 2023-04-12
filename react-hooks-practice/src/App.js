@@ -12,12 +12,12 @@ import CallBackTutorial from "./UseCallback/CallbackTutorial";
 function App() {
   return (
     <div className="App">
-      <StateTutorial />
-      {/* <EffectTutorial />
+      {/* <StateTutorial />
+      <EffectTutorial /> */}
       <ReducerTutorial />
-      <ContextTutorial />
-      <ImperativeHandle />
-      <RefTutorial />
+      {/* <ContextTutorial />
+      <ImperativeHandle /> */}
+      {/* <RefTutorial />
       <MemoTutorial />
       <CallBackTutorial /> */}
     </div>
