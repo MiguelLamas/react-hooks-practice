@@ -5,7 +5,7 @@
 - <ins>useState</ins> - It returns an array with two values: the current state and a function to update it. 
 - <ins>useReducer</ins> - Use when the state becomes complex, with state values depending on each other or when the next state depends on the previous one. Useful when many different States that are being altered on the same action perhaps, like with an onClick().
 - <ins>useEffect</ins> - Use this Hook to tell React that your component needs to do something after render. e.g fetching data, directly updating the DOM, and timers.
-- <ins>useRef</ins> - 
+- <ins>useRef</ins> - Allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
 - useLayoutEffect
 - useImperativeHandle
 - useContext
