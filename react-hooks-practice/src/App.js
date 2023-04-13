@@ -11,15 +11,15 @@ import CallBackTutorial from "./UseCallback/CallbackTutorial";
 function App() {
   return (
     <div className="App">
-      <StateTutorial />
+      {/* <StateTutorial />
       <EffectTutorial />
       <ReducerTutorial />
       <ContextTutorial />
-      <ImperativeHandle />
+      <ImperativeHandle /> */}
       <RefTutorial />
-      <MemoTutorial />
-      <CallBackTutorial />
-    </div>
+      {/* <MemoTutorial />
+      <CallBackTutorial /> */}
+    </div> 
   );
 }
 
