@@ -1,6 +1,6 @@
 # React Hooks Practice
 
-## Understanding and practicing the 9 core Hooks from React:
+## Understanding and practicing 9 core Hooks from React:
 
 ## `useState` :  A Component's Memory
 
