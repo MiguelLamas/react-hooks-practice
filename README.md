@@ -34,15 +34,21 @@
   
 ## `useImperativeHandle` : Customise the handle exposed as a ref.
 
-* <ins>`useImperativeHandle`</ins>  is a React Hook that lets you customize the handle exposed as a [ref](https://react.dev/learn/manipulating-the-dom-with-refs).
+* <ins>`useImperativeHandle`</ins> is a React Hook that lets you customize the handle exposed as a [ref](https://react.dev/learn/manipulating-the-dom-with-refs).
 
   * Call `useImperativeHandle` at the top level of your component to customize the ref handle it exposes.
   * Do not overuse refs. You should only use refs for imperative behaviors that you can’t express as props: for example, scrolling to a node, focusing a node, triggering an animation, selecting text, and so on.
   * If you can express something as a prop, you should not use a ref. For example, instead of exposing an imperative handle like { open, close } from a Modal component, it is better to take isOpen as a prop like <Modal isOpen={isOpen} />. [Effects](https://react.dev/learn/synchronizing-with-effects) can help you expose imperative behaviors via props.
 
+## `useContext` : Passing Data Deeply with Context.
+
+* <ins>`useContext`</ins> is a React Hook that lets you read and subscribe to [context](https://react.dev/learn/passing-data-deeply-with-context) from your component.
+ * Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. 
+ * `Context` lets the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.
+
 
   
   
-- useContext
+
 - useMemo
 - useCallback
