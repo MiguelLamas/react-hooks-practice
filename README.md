@@ -1,13 +1,48 @@
 # React Hooks Practice
 
-## Understanding and practicing all 9 core hooks from React:
+## Understanding and practicing the 9 core Hooks from React:
 
-- <ins>useState</ins> - It returns an array with two values: the current state and a function to update it. 
-- <ins>useReducer</ins> - Use when the state becomes complex, with state values depending on each other or when the next state depends on the previous one. Useful when many different States that are being altered on the same action perhaps, like with an onClick().
-- <ins>useEffect</ins> - Use this Hook to tell React that your component needs to do something after render. e.g fetching data, directly updating the DOM, and timers.
-- <ins>useRef</ins> - Allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
-- <ins>useLayoutEffect</ins> - Useful if you want to do something based on the DOM, before it gets printed to the screen. It runs synchronously immediately after React has performed all DOM mutations. This can be useful if you need to make DOM measurements (like getting the scroll position or other styles for an element) and then make DOM mutations or trigger a synchronous re-render by updating state.
-- useImperativeHandle
+## `useState` :  A Component's Memory
+
+* <ins>`useState`</ins> is a React Hook that lets you add a [state variable](https://react.dev/learn/state-a-components-memory) to your component.
+
+  * Components often need to change what’s on the screen as a result of an interaction. Typing into the form should update the input field, clicking “next” on an image carousel should change which image is displayed, clicking “buy” should put a product in the shopping cart. Components need to “remember” things: the current input value, the current image, the shopping cart. In React, this kind of component-specific memory is called `state`.
+
+## `useReducer` :  Extracting State Logic into a Reducer
+
+* <ins>`useReducer`</ins> is a React Hook that lets you add a [reducer](https://react.dev/learn/extracting-state-logic-into-a-reducer) to your component.
+
+  * Components with many state updates spread across many event handlers can get overwhelming. For these cases, you can consolidate all the state update logic outside your component in a single function, called a reducer.
+
+  * As your components grow in complexity, it can get harder to see at a glance all the different ways in which a component’s state gets updated. For example, a TaskApp component which holds an array of tasks in state, and uses three different event handlers to add, remove, and edit tasks.
+
+## `useRef` :  Reference a value that’s not needed for rendering.
+
+* <ins>`useRef`</ins> is a React Hook that lets you reference a value that’s not needed for rendering.
+
+  * You can store information between re-renders (unlike regular variables, which reset on every render).
+  * Changing it does not trigger a re-render (unlike state variables, which trigger a re-render).
+  * The information is local to each copy of your component (unlike the variables outside, which are shared).
+  * It’s particularly common to use a ref to manipulate the DOM. React has built-in support for this.
+  
+## `useLayoutEffect` :  Measuring layout before the browser repaints the screen.
+
+* <ins>`useLayoutEffect`</ins> is a version of `useEffect` that fires before the browser repaints the screen.
+
+  * Most components don’t need to know their position and size on the screen to decide what to render. They only return some JSX. Then the browser calculates their layout (position and size) and repaints the screen.
+  
+  
+## `useImperativeHandle` : Customise the handle exposed as a ref.
+
+* <ins>`useImperativeHandle`</ins>  is a React Hook that lets you customize the handle exposed as a [ref](https://react.dev/learn/manipulating-the-dom-with-refs).
+
+  * Call `useImperativeHandle` at the top level of your component to customize the ref handle it exposes.
+  * Do not overuse refs. You should only use refs for imperative behaviors that you can’t express as props: for example, scrolling to a node, focusing a node, triggering an animation, selecting text, and so on.
+  * If you can express something as a prop, you should not use a ref. For example, instead of exposing an imperative handle like { open, close } from a Modal component, it is better to take isOpen as a prop like <Modal isOpen={isOpen} />. [Effects](https://react.dev/learn/synchronizing-with-effects) can help you expose imperative behaviors via props.
+
+
+  
+  
 - useContext
 - useMemo
 - useCallback
