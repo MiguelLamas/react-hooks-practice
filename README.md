@@ -46,9 +46,11 @@
  * Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. 
  * `Context` lets the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.
 
+## `useMemo` : Cache A Calculation Between Re-Renders.
 
-  
-  
+* <ins>`useMemo`</ins> is a React Hook that lets you cache the result of a calculation between re-renders.
+    
+## `useCallback` : Cache A Function Definition Between Re-Renders.
 
-- useMemo
-- useCallback
+* <ins>`useCallback`</ins> is a React Hook that lets you cache a function definition between re-renders.
+
