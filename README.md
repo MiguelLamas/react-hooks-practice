@@ -2,6 +2,11 @@
 
 ## Understanding and practicing 9 core Hooks from React:
 
+# What are React Hooks? 
+
+React Hooks are Javascript Functions that have access to deep React features (state, side effects, etc), which you can add to your Components to separate concerns and maintain pure stateless components.
+##
+
 ## `useState` :  A Component's Memory
 
 * <ins>`useState`</ins> is a React Hook that lets you add a [state variable](https://react.dev/learn/state-a-components-memory) to your component.
